@@ -1,0 +1,83 @@
+<html>
+<head>
+    
+    <title>Company Organization Hierarchy</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid rgb(35, 34, 90);
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Department Name</th>
+                <th>Manager</th>
+                <th>Number of Employees</th>
+                <th>Budget</th>
+                <th>% of Total Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">HR</td>
+                <td>Saksham</td>
+                <td>15</td>
+                <td>$500,000</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Puniya</td>
+                <td>15</td>
+                <td>$500,000</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Engineering</td>
+                <td>Nikhil</td>
+                <td>50</td>
+                <td>$1,200,000</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td>Tanmay</td>
+                <td>50</td>
+                <td>$1,200,000</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td>Adi</td>
+                <td>50</td>
+                <td>$1,200,000</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Marketing</td>
+                <td>Umar</td>
+                <td>30</td>
+                <td>$800,000</td>
+                <td>16%</td>
+            </tr>
+            <tr>
+                <td>Manju</td>
+                <td>30</td>
+                <td>$800,000</td>
+                <td>16%</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total Company Budget</td>
+                <td>$5,000,000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 

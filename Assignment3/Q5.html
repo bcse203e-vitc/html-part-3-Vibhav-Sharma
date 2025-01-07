@@ -1,0 +1,88 @@
+<html>
+ <head>
+     <title>Grade Report</title>
+     <style>
+         table {
+             width: 100%;
+             border-collapse: collapse;
+         }
+         th, td {
+             padding: 10px;
+             text-align: center;
+             border: 1px solid black;
+         }
+         .highlight {
+             background-color: #ffcc00;
+             font-weight: bold;
+         }
+         .total {
+             font-weight: bold;
+         }
+     </style>
+ </head>
+ <body>
+     <h1>Grade Report</h1>
+     <table>
+         <thead>
+             <tr>
+                 <th>Student ID</th>
+                 <th>Name</th>
+                 <th>Maths</th>
+                 <th>Science</th>
+                 <th>English</th>
+                 <th>Total Marks</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr class="highlight">
+                 <td>001</td>
+                 <td>Saksham</td>
+                 <td>90</td>
+                 <td>85</td>
+                 <td>92</td>
+                 <td rowspan="2" class="total">267</td>
+             </tr>
+             <tr class="highlight">
+                 <td>002</td>
+                 <td>Puniya</td>
+                 <td>95</td>
+                 <td>80</td>
+                 <td>92</td>
+             </tr>
+             <tr class="highlight">
+                 <td>003</td>
+                 <td>Nikhil</td>
+                 <td>88</td>
+                 <td>90</td>
+                 <td>89</td>
+                 <td class="total">267</td>
+             </tr>
+             <tr>
+                 <td>004</td>
+                 <td>Tanmay</td>
+                 <td>85</td>
+                 <td>89</td>
+                 <td>88</td>
+                 <td class="total">262</td>
+             </tr>
+             <tr>
+                 <td>005</td>
+                 <td>Saggy</td>
+                 <td>70</td>
+                 <td>80</td>
+                 <td>75</td>
+                 <td class="total">225</td>
+             </tr>
+         </tbody>
+         <tfoot>
+             <tr>
+                 <td colspan="2">Class Average</td>
+                 <td>85.6</td>
+                 <td>84.8</td>
+                 <td>88.4</td>
+                 <td></td>
+             </tr>
+         </tfoot>
+     </table>
+ </body>
+ </html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .highlight-veg {
+            color: green;
+        }
+        .ratings {
+            font-size: 20px;
+        }
+        .veg {
+            background-color: #e6f9e6;
+        }
+        .non-veg {
+            background-color: #f8d7da;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Dish Name</th>
+                <th>Category</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th>Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="veg">
+                <td rowspan="2">Aloo Tikki 🌱</td>
+                <td>Appetizer</td>
+                <td>Potatoes, peas, spices</td>
+                <td>₹50</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <tr class="veg">
+                <td>Main Course</td>
+                <td>Potatoes, peas, bread, spices</td>
+                <td>₹120</td>
+                <td class="ratings">★★★★★</td>
+            </tr>
+            <tr class="non-veg">
+                <td>Butter Chicken</td>
+                <td>Main Course</td>
+                <td>Chicken, butter, cream, spices</td>
+                <td>₹250</td>
+                <td class="ratings">★★★☆☆</td>
+            </tr>
+            <tr class="veg">
+                <td>Gulab Jamun🌱</td>
+                <td>Dessert</td>
+                <td>Milk, sugar, rose water, flour</td>
+                <td>₹60</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <tr class="non-veg">
+                <td>Biryani</td>
+                <td>Main Course</td>
+                <td>Rice, chicken, vegetables, spices</td>
+                <td>₹150</td>
+                <td class="ratings">★★★★★</td>
+            </tr>
+            <tr class="veg">
+                <td>Paneer Tikka🌱</td>
+                <td>Appetizer</td>
+                <td>Paneer, yogurt, spices</td>
+                <td>₹180</td>
+                <td class="ratings">★★★★☆</td>
+            </tr>
+            <tr class="veg">
+                <td>Jalebi🌱</td>
+                <td>Dessert</td>
+                <td>Sugar syrup, flour, ghee</td>
+                <td>₹40</td>
+                <td class="ratings">★★★☆☆</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 

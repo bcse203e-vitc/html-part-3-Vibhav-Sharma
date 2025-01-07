@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .highlight {
+            background-color: #51ff00;
+            font-weight: bold;
+        }
+        .h {
+            background-color: #ff0000;
+            font-weight: bold;
+        }
+        .total {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sales Report</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Salesperson</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Unit Price</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="highlight">
+                <td>North</td>
+                <td>Saksham</td>
+                <td>Laptop</td>
+                <td>15</td>
+                <td>2000</td>
+                <td>30,000</td>
+            </tr>
+            <tr>
+                <td>South</td>
+                <td>Nikhil</td>
+                <td>Smartphone</td>
+                <td>30</td>
+                <td>500</td>
+                <td>15,000</td>
+            </tr>
+            <tr>
+                <td>East</td>
+                <td>Mayank</td>
+                <td>Tablet</td>
+                <td>50</td>
+                <td>300</td>
+                <td>15,000</td>
+            </tr>
+            <tr class="h">
+                <td>West</td>
+                <td>Puniya</td>
+                <td>Smartwatch</td>
+                <td>20</td>
+                <td>200</td>
+                <td>4,000</td>
+            </tr>
+            <tr>
+                <td>Central</td>
+                <td>Spider Man</td>
+                <td>Headphones</td>
+                <td>100</td>
+                <td>100</td>
+                <td>10,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="total">
+                <td colspan="5">Grand Total</td>
+                <td>74,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
