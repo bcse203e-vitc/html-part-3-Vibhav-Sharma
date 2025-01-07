@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .keynote {
+            background-color: #ffcccb;
+        }
+        .workshop {
+            background-color: #e0f7fa;
+        }
+        .panel {
+            background-color: #ffeb3b;
+        }
+        .break {
+            background-color: #c8e6c9;
+        }
+        .legend {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .legend div {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conference Timetable</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Room A</th>
+                <th>Room B</th>
+                <th>Room C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:30</td>
+                <td colspan="3" class="keynote" title="Speaker: Dr. John Smith - Keynote Speech: The Future of AI in Healthcare">Keynote: The Future of AI in Healthcare</td>
+            </tr>
+            <tr>
+                <td>10:30 - 11:00</td>
+                <td class="break" title="Refreshment Break">Break</td>
+                <td class="break" title="Refreshment Break">Break</td>
+                <td class="break" title="Refreshment Break">Break</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:30</td>
+                <td class="workshop" rowspan="2" title="Speaker: Dr. Alice Brown - Workshop on Data Privacy">Workshop: Data Privacy</td>
+                <td class="panel" title="Moderator: Jane Doe - Panel Discussion: Ethical AI">Panel: Ethical AI</td>
+                <td class="workshop" title="Speaker: Dr. Michael Green - Workshop on Cloud Computing">Workshop: Cloud Computing</td>
+            </tr>
+            <tr>
+                <td>12:30 - 02:00</td>
+                <td class="panel" title="Moderator: Jane Doe - Panel Discussion: Ethical AI">Panel: Ethical AI</td>
+                <td class="workshop" title="Speaker: Dr. Michael Green - Workshop on Cloud Computing">Workshop: Cloud Computing</td>
+            </tr>
+            <tr>
+                <td>02:00 - 03:30</td>
+                <td colspan="2" class="keynote" title="Speaker: Dr. Emily White - Keynote Speech: Innovations in Machine Learning">Keynote: Innovations in Machine Learning</td>
+                <td class="panel" title="Moderator: Alan Clark - Panel Discussion: AI in Business">Panel: AI in Business</td>
+            </tr>
+            <tr>
+                <td>03:30 - 04:00</td>
+                <td class="break" title="Refreshment Break">Break</td>
+                <td class="break" title="Refreshment Break">Break</td>
+                <td class="break" title="Refreshment Break">Break</td>
+            </tr>
+            <tr>
+                <td>04:00 - 05:30</td>
+                <td class="workshop" title="Speaker: Dr. Sarah Lee - Workshop on AI Ethics">Workshop: AI Ethics</td>
+                <td class="workshop" title="Speaker: Dr. David Kim - Workshop on Blockchain">Workshop: Blockchain</td>
+                <td class="panel" title="Moderator: Olivia Wilson - Panel Discussion: The Impact of AI on Society">Panel: The Impact of AI on Society</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="legend">
+        <div><strong>Legend:</strong></div>
+        <div><span style="background-color: #ffcccb; padding: 3px;">Keynote</span>: Keynote Speech</div>
+        <div><span style="background-color: #e0f7fa; padding: 3px;">Workshop</span>: Interactive Workshop</div>
+        <div><span style="background-color: #ffeb3b; padding: 3px;">Panel</span>: Panel Discussion</div>
+        <div><span style="background-color: #c8e6c9; padding: 3px;">Break</span>: Refreshment Break</div>
+    </div>
+</body>
+</html>
