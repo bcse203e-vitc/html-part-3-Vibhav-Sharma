@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Exam Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .theory {
+            background-color: #f2f2f2;
+        }
+        .practical {
+            background-color: #c8e6c9;
+        }
+        .total-exams {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .nested-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .nested-table th, .nested-table td {
+            border: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exam Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>9:00 AM - 12:00 PM</th>
+                <th>1:00 PM - 4:00 PM</th>
+                <th>Total Exams</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10-1-25</td>
+                <td class="theory">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>Math</strong></td>
+                            <td>3 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Physics</strong></td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="practical">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>Chemistry Lab</strong></td>
+                            <td>2 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">3 Exams</td>
+            </tr>
+            <tr>
+                <td>11-1-25</td>
+                <td class="practical">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>Biology Lab</strong></td>
+                            <td>2 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="theory">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>History</strong></td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">2 Exams</td>
+            </tr>
+            <tr>
+                <td>12-1-25</td>
+                <td class="theory">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>English</strong></td>
+                            <td>3 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="practical">
+                    <table class="nested-table">
+                        <tr>
+                            <td><strong>Computer Science Lab</strong></td>
+                            <td>2 hours</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">2 Exams</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
